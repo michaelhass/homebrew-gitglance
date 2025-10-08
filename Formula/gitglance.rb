@@ -5,20 +5,20 @@
 class Gitglance < Formula
   desc "Simple git terminal UI."
   homepage "https:github.com/michaelhass/gitglance"
-  version "0.4.0"
+  version "0.5.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.4.0/gitglance_Darwin_x86_64.tar.gz"
-      sha256 "da8f21f63567ff0c3d759b1513bbd44d58a12915a1a108f6b8150b9eef77d145"
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.5.0/gitglance_Darwin_x86_64.tar.gz"
+      sha256 "8f15590bad5736a29a1fa7b847af04e29aab167ba60d51ef57148dd00f613d0b"
 
       def install
         bin.install "gitglance"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.4.0/gitglance_Darwin_arm64.tar.gz"
-      sha256 "eb5022c104e6b77c5a6a8913a023b771828a8f83dd7e18e9e543096c8588cccc"
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.5.0/gitglance_Darwin_arm64.tar.gz"
+      sha256 "74d2e4093d943ba24aba4e327a183461620ae01d53742e27bb369629c06dc49d"
 
       def install
         bin.install "gitglance"
@@ -27,16 +27,16 @@ class Gitglance < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.4.0/gitglance_Linux_x86_64.tar.gz"
-      sha256 "4aa7a97831330250a5ef793595470ca4fe57aaab7c470d5b909c4fb1c43d8309"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.5.0/gitglance_Linux_x86_64.tar.gz"
+      sha256 "8895b59989e313d1e4ee1e1c9600381fa6dce02f53ec51f9006b0529aae97570"
       def install
         bin.install "gitglance"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.4.0/gitglance_Linux_arm64.tar.gz"
-      sha256 "b223de1a14b9ba15d7247aad50a3c8a380d81b999185777467c3346aae435775"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.5.0/gitglance_Linux_arm64.tar.gz"
+      sha256 "509a6d4eead260a612f700dd4b5f80458b9eaab0fe1b604d6174e66f44f0613f"
       def install
         bin.install "gitglance"
       end
