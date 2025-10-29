@@ -5,20 +5,20 @@
 class Gitglance < Formula
   desc "Simple git terminal UI."
   homepage "https:github.com/michaelhass/gitglance"
-  version "0.8.0"
+  version "0.9.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.8.0/gitglance_Darwin_x86_64.tar.gz"
-      sha256 "b5376d388e203b8f7a4bdfea2cd2689399679c3851dd8f2fe400848f239333c6"
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.9.0/gitglance_Darwin_x86_64.tar.gz"
+      sha256 "7b16d824de50910c8e4b25de665047ce284df5e6cbded98c3a2c2d48c95d1e42"
 
       def install
         bin.install "gitglance"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.8.0/gitglance_Darwin_arm64.tar.gz"
-      sha256 "1626c11501bdfb231f5356efd9311112a63a86fc48c47d91c5c38cf4aa5d9bb8"
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.9.0/gitglance_Darwin_arm64.tar.gz"
+      sha256 "ab9e97211eb35ca081f1ba6ad76dbbae4f35fdb815714dcb6a3571750d8495cf"
 
       def install
         bin.install "gitglance"
@@ -28,15 +28,15 @@ class Gitglance < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.8.0/gitglance_Linux_x86_64.tar.gz"
-      sha256 "941a91003ff0a366c68a982e4e280c3e3735ee02bde87ed5c91c21c16d2eb34b"
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.9.0/gitglance_Linux_x86_64.tar.gz"
+      sha256 "d0d8d79710be8eab5c8dc896719896133ac38922244dd20cee4dc392c1f187f6"
       def install
         bin.install "gitglance"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/michaelhass/gitglance/releases/download/v0.8.0/gitglance_Linux_arm64.tar.gz"
-      sha256 "1395107e11ec1a07951006200b9a8c5a163d50d114db93dccddcce3393c0bf80"
+      url "https://github.com/michaelhass/gitglance/releases/download/v0.9.0/gitglance_Linux_arm64.tar.gz"
+      sha256 "79224bcc28639aab2d801f83dba03d9f46a918677daed94c37851cc8d5120198"
       def install
         bin.install "gitglance"
       end
